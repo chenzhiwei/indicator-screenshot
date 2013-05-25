@@ -1,0 +1,29 @@
+# Indicator Screenshot
+
+A simple Ubuntu indicator that integrated with Deepin Screenshot package.
+
+## Install Deepin Screenshot
+
+```
+$ cd /tmp
+$ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-gsettings/python-deepin-gsettings_0.1+git20130318115600_amd64.deb
+$ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-utils/python-deepin-utils_0.0.1-1+git20130506134313_amd64.deb
+$ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1+git20130522104041_all.deb
+$ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.0+git20130508143603.tar.gz
+$ sudo dpkg -i *.deb
+```
+
+## Install Indicator Screenshot
+
+```
+# cp -rf indicator-screenshot /usr/share
+# cp indicator-screenshot/indicator-screenshot.desktop /usr/share/applications
+# cp indicator-screenshot/icons/indicator-screenshot-48.png /usr/share/icons/hicolor/48x48/apps
+# cp indicator-screenshot/indicator-screenshot /usr/bin
+```
+
+## Make it auto start
+
+```
+$ cp indicator-screenshot/indicator-screenshot.desktop ~/.config/autostart
+```
