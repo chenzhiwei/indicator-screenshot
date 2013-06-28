@@ -1,0 +1,5 @@
+indicator-screenshot (0.0.1.quantal.2-1ubuntu1) quantal; urgency=low
+
+  * Write and build this package
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Sun, 26 May 2013 09:54:45 +0800

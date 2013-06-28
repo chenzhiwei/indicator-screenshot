@@ -11,19 +11,25 @@ $ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-utils/python-de
 $ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1+git20130522104041_all.deb
 $ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.0+git20130508143603.tar.gz
 $ sudo dpkg -i *.deb
+$ sudo apt-get -f install
 ```
 
 ## Install Indicator Screenshot
 
 ```
-# cp -rf indicator-screenshot /usr/share
-# cp indicator-screenshot/indicator-screenshot.desktop /usr/share/applications
-# cp indicator-screenshot/icons/indicator-screenshot-48.png /usr/share/icons/hicolor/48x48/apps
-# cp indicator-screenshot/indicator-screenshot /usr/bin
+$ cd /tmp
+$ git clone git://github.com/chenzhiwei/indicator-screenshot.git
+$ cd indicator-screenshot
+$ sudo python setup.py install
 ```
 
 ## Make it auto start
 
 ```
-$ cp indicator-screenshot/indicator-screenshot.desktop ~/.config/autostart
+$ cp /usr/share/indicator-screenshot/indicator-screenshot.desktop ~/.config/autostart
 ```
+
+## Git Repository
+
+* Origin repo: <https://github.com/chenzhiwei/indicator-screenshot>
+* Backup repo: <https://gitcafe.com/chenzhiwei/indicator-screenshot>

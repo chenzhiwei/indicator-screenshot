@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Indicator Screenshot
+GenericName=Indicator Screenshot
+Comment=An indicator for deepin-screenshot
+Icon=/usr/share/indicator-screenshot/icons/indicator-screenshot.png
+Exec=indicator-screenshot
+Categories=GNOME;GTK;Application;Utils;
+Hidden=False
+X-GNOME-autostart-enabled=true
