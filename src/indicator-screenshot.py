@@ -37,8 +37,9 @@ class IndicatorScreenshot:
                 "Indicator Screenshot", "indicator-screenshot",
                 appindicator.CATEGORY_APPLICATION_STATUS)
         # Delete/modify the following file when distributing as a package
+        realpath = os.path.realpath(__file__)
         self.ind.set_icon_theme_path(os.path.abspath(os.path.join(
-            os.path.dirname(__file__), 'icons')))
+            os.path.dirname(realpath), 'icons')))
         self.ind.set_icon("indicator")
         self.ind.set_status(appindicator.STATUS_ACTIVE)
         # Create Menu
@@ -66,14 +67,16 @@ class IndicatorScreenshot:
 
     def select_area(self, *args):
         os.system('deepin-screenshot')
-        uri = "file://" + os.path.abspath(os.path.dirname(__file__)) + "/icons/screenshot-notification.svg"
+        realpath = os.path.realpath(__file__)
+        uri = "file://" + os.path.abspath(os.path.dirname(realpath)) + "/icons/screenshot-notification.svg"
         title = 'Screenshot Complete'
         content = 'This is a notification from indicator-screenshot.'
         self.show_notification(title, content, uri)
 
     def full_screen(self, *args):
         os.system('deepin-screenshot -f')
-        uri = "file://" + os.path.abspath(os.path.dirname(__file__)) + "/icons/screenshot-notification.svg"
+        realpath = os.path.realpath(__file__)
+        uri = "file://" + os.path.abspath(os.path.dirname(realpath)) + "/icons/screenshot-notification.svg"
         title = 'Screenshot Complete'
         content = 'This is a notification from indicator-screenshot.'
         self.show_notification(title, content, uri)

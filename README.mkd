@@ -14,13 +14,21 @@ $ sudo dpkg -i *.deb
 $ sudo apt-get -f install
 ```
 
-## Install Indicator Screenshot
+## Install Indicator Screenshot From Source
 
 ```
 $ cd /tmp
 $ git clone git://github.com/chenzhiwei/indicator-screenshot.git
 $ cd indicator-screenshot
 $ sudo python setup.py install
+```
+
+## Install Indicator Screenshot From Ubuntu PPA
+
+```
+$ sudo add-apt-repository ppa:chenzhiwei/ppa
+$ sudo apt-get update
+$ sudo apt-get install indicator-screenshot
 ```
 
 ## Make it auto start

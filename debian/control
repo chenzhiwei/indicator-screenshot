@@ -8,5 +8,10 @@ Homepage: http://github.com/chenzhiwei/indicator-screenshot
 
 Package: indicator-screenshot
 Architecture: all
-Depends: python (>= 2.7.1-0ubuntu2), gconf2, python-xlib, deepin-ui (>= 1+git201209291421), python-wnck, python-xdg
+Depends: python3,
+    gconf2,
+    python-xlib,
+    deepin-ui,
+    python-wnck,
+    python-xdg
 Description: An indicator for Deepin Screenshot

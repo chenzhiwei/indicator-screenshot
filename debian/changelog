@@ -1,4 +1,22 @@
-indicator-screenshot (0.0.1.quantal.2-1ubuntu1) quantal; urgency=low
+indicator-screenshot (0.0.1.raring.5-1ubuntu1) raring; urgency=low
+
+  * Fix the postint bug
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Fri, 28 Jun 2013 23:55:48 +0800
+
+indicator-screenshot (0.0.1.raring.4-1ubuntu1) raring; urgency=low
+
+  * Remove the shell script, add link file
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Fri, 28 Jun 2013 23:42:18 +0800
+
+indicator-screenshot (0.0.1.raring.3-1ubuntu1) raring; urgency=low
+
+  * Remove the link file
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Fri, 28 Jun 2013 23:22:17 +0800
+
+indicator-screenshot (0.0.1.raring.2-1ubuntu1) raring; urgency=low
 
   * Write and build this package
 
