@@ -48,13 +48,21 @@ class IndicatorScreenshot:
         self.mSelectArea.connect("activate", self.select_area, None)
         self.mSelectArea.show()
 
-        self.mFullScreen= gtk.MenuItem("Full Screen")
+        self.mFullScreen = gtk.MenuItem("Full Screen")
         self.menu.append(self.mFullScreen)
         self.mFullScreen.connect("activate", self.full_screen, None)
         self.mFullScreen.show()
 
+        self.exit = gtk.MenuItem("Exit")
+        self.menu.append(self.exit)
+        self.exit.connect("activate", self.exit_indicator, None)
+        self.exit.show()
+
         # Connect Indicator to menu
         self.ind.set_menu(self.menu)
+
+    def exit_indicator(self, *args):
+        exit(0)
 
     def select_area(self, *args):
         os.system('deepin-screenshot')
