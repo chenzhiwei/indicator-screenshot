@@ -3,7 +3,7 @@
 #
 # Copyright 2013 CHENZHIWEI.CN
 #
-# Author: Chen, Zhi Wei <zhiweik@gmail.com>
+# Author: Chen Zhiwei <zhiweik@gmail.com>
 #
 # This program is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License version 3 or any later
@@ -27,7 +27,7 @@ import dbus
 
 class IndicatorScreenshot:
     def __init__(self, args = None):
-        if dbus.SessionBus().request_name("cn.chenzhiwei.indicator-screenshot") \
+        if dbus.SessionBus().request_name("cn.chenzhiwei.indicator-screenshot")\
                 != dbus.bus.REQUEST_NAME_REPLY_PRIMARY_OWNER:
             exit("IndicatorScreenshot Already Running!")
 
@@ -36,12 +36,13 @@ class IndicatorScreenshot:
         self.ind = appindicator.Indicator(
                 "Indicator Screenshot", "indicator-screenshot",
                 appindicator.CATEGORY_APPLICATION_STATUS)
-        # Delete/modify the following file when distributing as a package
+
         realpath = os.path.realpath(__file__)
         self.ind.set_icon_theme_path(os.path.abspath(os.path.join(
-            os.path.dirname(realpath), 'icons')))
+                os.path.dirname(realpath), 'icons')))
         self.ind.set_icon("indicator")
         self.ind.set_status(appindicator.STATUS_ACTIVE)
+
         # Create Menu
         self.menu = gtk.Menu()
         self.mSelectArea= gtk.MenuItem("Select Area")
@@ -68,15 +69,17 @@ class IndicatorScreenshot:
     def select_area(self, *args):
         os.system('deepin-screenshot')
         realpath = os.path.realpath(__file__)
-        uri = "file://" + os.path.abspath(os.path.dirname(realpath)) + "/icons/screenshot-notification.svg"
+        uri = "file://" + os.path.abspath(os.path.dirname(realpath)) \
+                + "/icons/screenshot-notification.svg"
         title = 'Screenshot Complete'
-        content = 'This is a notification from indicator-screenshot.'
+        content = 'File saved to `~/Pictures` directory.'
         self.show_notification(title, content, uri)
 
     def full_screen(self, *args):
         os.system('deepin-screenshot -f')
         realpath = os.path.realpath(__file__)
-        uri = "file://" + os.path.abspath(os.path.dirname(realpath)) + "/icons/screenshot-notification.svg"
+        uri = "file://" + os.path.abspath(os.path.dirname(realpath)) \
+                + "/icons/screenshot-notification.svg"
         title = 'Screenshot Complete'
         content = 'This is a notification from indicator-screenshot.'
         self.show_notification(title, content, uri)
@@ -92,7 +95,6 @@ def main():
     args = None
 
     indicator = IndicatorScreenshot(args)
-    # Load global css for the first time.
     gtk.main()
     exit(0)
 

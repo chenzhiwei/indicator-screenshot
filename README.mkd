@@ -14,7 +14,7 @@ $ sudo dpkg -i *.deb
 $ sudo apt-get -f install
 ```
 
-## Install Indicator Screenshot From Source
+## Install From Source
 
 ```
 $ cd /tmp
@@ -23,7 +23,7 @@ $ cd indicator-screenshot
 $ sudo python setup.py install
 ```
 
-## Install Indicator Screenshot From Ubuntu PPA
+## Install From Ubuntu PPA
 
 ```
 $ sudo add-apt-repository ppa:chenzhiwei/ppa
