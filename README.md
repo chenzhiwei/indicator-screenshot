@@ -40,4 +40,4 @@ $ cp /usr/share/indicator-screenshot/indicator-screenshot.desktop ~/.config/auto
 ## Git Repository
 
 * Origin repo: <https://github.com/chenzhiwei/indicator-screenshot>
-* Backup repo: <https://gitcafe.com/chenzhiwei/indicator-screenshot>
+* Backup repo: <https://gitshell.com/chenzhiwei/indicator-screenshot>
