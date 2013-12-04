@@ -9,7 +9,7 @@ $ cd /tmp
 $ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-gsettings/python-deepin-gsettings_0.1+git20130318115600_amd64.deb
 $ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-utils/python-deepin-utils_0.0.1-1+git20130506134313_amd64.deb
 $ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1+git20130522104041_all.deb
-$ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.0+git20130508143603.tar.gz
+$ wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.0%2bgit20131108165119~32e91fbc03_all.deb
 $ sudo dpkg -i *.deb
 $ sudo apt-get -f install
 ```
