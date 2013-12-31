@@ -1,3 +1,15 @@
+indicator-screenshot (0.0.2.saucy.1-1ubuntu1) saucy; urgency=low
+
+  * Add deepin-screenshot related package auto installing
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Tue, 31 Dec 2013 14:06:17 +0800
+
+indicator-screenshot (0.0.1.saucy.5-1ubuntu1) saucy; urgency=low
+
+  * Package saucy package
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Thu, 07 Nov 2013 11:28:53 +0800
+
 indicator-screenshot (0.0.1.raring.5-1ubuntu1) raring; urgency=low
 
   * Fix the postint bug

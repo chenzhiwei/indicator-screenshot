@@ -6,7 +6,7 @@ from glob import glob
 
 NAME = 'indicator-screenshot'
 DESCRIPTION = 'An indicator for Deepin screenshot'
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 AUTHOR = 'Chen Zhiwei'
 AUTHOR_EMAIL = 'zhiweik@gmail.com'
 URL = 'http://github.com/chenzhiwei/indicator-screenshot'
@@ -16,7 +16,7 @@ DATA_FILES = [('/usr/share/indicator-screenshot/icons', glob('data/icons/*')),
         ('/usr/share/indicator-screenshot', glob('src/*.py')),
         ('/usr/bin', ['bin/indicator-screenshot']),
         ('/usr/share/applications', ['data/indicator-screenshot.desktop']),
-        ('/usr/share/pixmaps', ['data/icons/indicator-screenshot.png'])]
+        ('/usr/share/pixmaps', ['data/icons/indicator-screenshot.ico'])]
 
 def main():
     setup(name = NAME,

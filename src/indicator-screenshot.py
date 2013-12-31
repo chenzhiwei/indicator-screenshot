@@ -70,7 +70,7 @@ class IndicatorScreenshot:
         os.system('deepin-screenshot')
         realpath = os.path.realpath(__file__)
         uri = "file://" + os.path.abspath(os.path.dirname(realpath)) \
-                + "/icons/screenshot-notification.svg"
+                + "/icons/screenshot-notification.ico"
         title = 'Screenshot Complete'
         content = 'File saved to `~/Pictures` directory.'
         self.show_notification(title, content, uri)
@@ -79,7 +79,7 @@ class IndicatorScreenshot:
         os.system('deepin-screenshot -f')
         realpath = os.path.realpath(__file__)
         uri = "file://" + os.path.abspath(os.path.dirname(realpath)) \
-                + "/icons/screenshot-notification.svg"
+                + "/icons/screenshot-notification.ico"
         title = 'Screenshot Complete'
         content = 'This is a notification from indicator-screenshot.'
         self.show_notification(title, content, uri)

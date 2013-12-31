@@ -1,33 +1,26 @@
 #!/bin/bash
 
 function check_depends(){
-    local status=0
+    rm -rf /tmp/deepin && mkdir -p /tmp/deepin && cd /tmp/deepin
+
     if ! dpkg -s python-deepin-gsettings &>/dev/null; then
-        status=1
         echo "python-deepin-gsettings is not installed, please install it first."
-        echo "http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-gsettings/python-deepin-gsettings_0.1+git20130318115600_amd64.deb"
+        wget "http://indicator-screenshot.qiniudn.com/python-deepin-gsettings_0.1+git20131016204258~a64de3ac19_amd64.deb"
     fi
 
     if ! dpkg -s python-deepin-utils &>/dev/null; then
-        status=1
         echo "python-deepin-utils is not installed, please install it first."
-        echo "http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-utils/python-deepin-utils_0.0.1-1+git20130506134313_amd64.deb"
+        wget "http://indicator-screenshot.qiniudn.com/python-deepin-utils_0.0.1-1+git20131213163147~b0fcaedd21_amd64.deb"
     fi
 
     if ! dpkg -s deepin-ui &>/dev/null; then
-        status=1
         echo "deepin-ui is not installed, please install it first."
-        echo "http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1+git20130522104041_all.deb"
+        wget "http://indicator-screenshot.qiniudn.com/deepin-ui_1+git20131230221442~bfb70c7166_all.deb"
     fi
 
     if ! dpkg -s deepin-screenshot &>/dev/null; then
-        status=1
         echo "deepin-screenshot is not installed, please install it first."
-        echo "http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.0+git20130508143603.tar.gz"
-    fi
-
-    if [ $status -ne 0 ]; then
-        exit 1
+        wget "http://indicator-screenshot.qiniudn.com/deepin-screenshot_2.0+git20131219150013~f58373936f_all.deb"
     fi
 }
 

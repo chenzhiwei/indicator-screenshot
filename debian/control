@@ -3,15 +3,10 @@ Section: utils
 Priority: extra
 Maintainer: Chen Zhiwei <zhiweik@gmail.com>
 Build-Depends: debhelper (>= 8), python, python-distutils-extra, python-polib
-Standards-Version: 0.0.1
+Standards-Version: 0.0.2
 Homepage: http://github.com/chenzhiwei/indicator-screenshot
 
 Package: indicator-screenshot
 Architecture: all
-Depends: python3,
-    gconf2,
-    python-xlib,
-    deepin-ui,
-    python-wnck,
-    python-xdg
+Depends: python, python-appindicator
 Description: An indicator for Deepin Screenshot
