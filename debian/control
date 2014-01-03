@@ -8,5 +8,5 @@ Homepage: http://github.com/chenzhiwei/indicator-screenshot
 
 Package: indicator-screenshot
 Architecture: all
-Depends: python, python-appindicator
+Depends: python, python-appindicator, deepin-screenshot
 Description: An indicator for Deepin Screenshot

@@ -1,3 +1,9 @@
+indicator-screenshot (0.0.2.saucy.2-1ubuntu1) saucy; urgency=low
+
+  * Add deepin-screenshot depends
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Fri, 03 Jan 2014 12:38:04 +0800
+
 indicator-screenshot (0.0.2.saucy.1-1ubuntu1) saucy; urgency=low
 
   * Add deepin-screenshot related package auto installing

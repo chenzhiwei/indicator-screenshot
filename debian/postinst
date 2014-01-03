@@ -2,9 +2,4 @@
 
 ln -sf /usr/share/indicator-screenshot/indicator-screenshot.py /usr/bin/indicator-screenshot
 
-echo "***********************************************"
-echo "#     Run following commands to finish        #"
-echo "==============================================="
-echo "#     sudo dpkg -i /tmp/deepin/*.deb          #"
-echo "#     sudo apt-get install -f                 #"
-echo "***********************************************"
+exit 0

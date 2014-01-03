@@ -2,14 +2,7 @@
 
 A simple Ubuntu indicator that integrated with Deepin Screenshot package.
 
-## Install From Source
-
-```
-$ cd /tmp
-$ git clone git://github.com/chenzhiwei/indicator-screenshot.git
-$ cd indicator-screenshot
-$ sudo python setup.py install
-```
+Ubuntu PPA URL: <https://launchpad.net/~chenzhiwei/+archive/ppa>
 
 ## Install From Ubuntu PPA
 
@@ -19,13 +12,12 @@ $ sudo apt-get update
 $ sudo apt-get install indicator-screenshot
 ```
 
-## Install Deepin Screenshot packages
-
-You MUST first install `indicator-screenshot` from PPA.
+## Install Deepin Screenshot(without indicator)
 
 ```
-$ sudo dpkg -i /tmp/deepin/*.deb
-$ sudo apt-get install -f
+$ sudo add-apt-repository ppa:chenzhiwei/ppa
+$ sudo apt-get update
+$ sudo apt-get install deepin-screenshot
 ```
 
 ## Make it auto start
@@ -36,7 +28,7 @@ $ cp /usr/share/indicator-screenshot/indicator-screenshot.desktop ~/.config/auto
 
 ## Supported platform
 
-Only available on Ubuntu 13.10.
+Only available on Ubuntu 13.04 or higher.
 
 ## Git Repository
 
