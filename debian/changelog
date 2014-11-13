@@ -1,3 +1,9 @@
+indicator-screenshot (0.0.2.utopic.2-1ubuntu1) utopic; urgency=low
+
+  * Repackage for ubuntu 14.10 utopic
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Thu, 13 Nov 2014 16:57:31 +0800
+
 indicator-screenshot (0.0.2.trusty.2-1ubuntu1) trusty; urgency=low
 
   * Repackage for ubuntu 14.04 trusty
