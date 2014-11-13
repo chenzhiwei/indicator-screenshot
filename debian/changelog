@@ -1,3 +1,9 @@
+indicator-screenshot (0.0.2.trusty.2-1ubuntu1) trusty; urgency=low
+
+  * Repackage for ubuntu 14.04 trusty
+
+ -- Chen Zhiwei <zhiweik@gmail.com>  Sun, 06 Apr 2014 19:24:59 +0800
+
 indicator-screenshot (0.0.2.saucy.2-1ubuntu1) saucy; urgency=low
 
   * Add deepin-screenshot depends
