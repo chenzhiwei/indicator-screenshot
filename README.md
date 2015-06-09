@@ -2,6 +2,8 @@
 
 A simple Ubuntu indicator that integrated with Deepin Screenshot package.
 
+NOTE: This package was no longer maintained, because it is hard to port Deepin package to Ubuntu.
+
 Ubuntu PPA URL: <https://launchpad.net/~chenzhiwei/+archive/ppa>
 
 ## Install From Ubuntu PPA
